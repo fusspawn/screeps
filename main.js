@@ -5,6 +5,10 @@ var repair = require('repair');
 require('spawn_functions');
 var spawner = require('spawning_logic');
 var spawn_logic = new spawner();
+require("update_check")();
+
+update_check();
+
 
 for(var i in Memory.creeps) {
     if(!Game.creeps[i]) {
