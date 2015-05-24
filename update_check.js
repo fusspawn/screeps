@@ -1,8 +1,10 @@
 var version = 2;
 module.exports = function () {
-    var sversion = (Memory.version == undefined) ? Memory.version : -1;
-    console.log(sversion);
-    
+
+    if(Memory.version == undefined)
+       Memory.version = 0;
+
+    sversion = Memory.version;
     if(sversion < version) {
         console.log("Incoming git update!");
         Memory.version = version;
