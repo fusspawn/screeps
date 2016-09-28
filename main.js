@@ -1,5 +1,5 @@
-var spawner = require("./v3/spawner.js");
-var ai_handler = require("./v3/ai_handler.js");
+var spawner = require("spawner.js");
+var ai_handler = require("ai_handler.js");
 
 spawner.tick();
 ai_handler.tick();
